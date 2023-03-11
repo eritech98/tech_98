@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bio-data form</title>
+
+    
+    <h2 style="color: rgb(19, 16, 16);">My week one assignment</h2>
+    
+
+	<style>
+
+        h2 {
+			text-align: center;
+		}
+        
+		form {
+			max-width: 600px;
+			margin: auto;
+		}
+		input[type=text], input[type=email] {
+			padding: 10px;
+			margin: 5px 0;
+			width: 100%;
+			border-radius: 5px;
+			border: 1px solid #ccc;
+		}
+
+        input[type=text], input[type=phonenumber] {
+			padding: 10px;
+			margin: 5px 0;
+			width: 100%;
+			border-radius: 5px;
+			border: 1px solid #ccc;
+		}
+
+        input[type=text], input[type=password] {
+			padding: 10px;
+			margin: 5px 0;
+			width: 100%;
+			border-radius: 5px;
+			border: 1px solid #ccc;
+		}     
+
+        input[type=text], input[type=gender] {
+			padding: 10px;
+			margin: 5px 0;
+			width: 100%;
+			border-radius: 5px;
+			border: 1px solid #ccc;
+		}
+        
+
+		input[type=submit] {
+			background-color: #4CAF50;
+			color: white;
+			padding: 10px 20px;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+		}
+		.error {
+			color: red;
+			font-weight: bold;
+			margin-top: 5px;
+			display: none;
+		}
+		.success {
+			color: green;
+			font-weight: bold;
+			margin-top: 5px;
+			display: none;
+		}
+		.highlight {
+			border: 1px solid red;
+		}
+	</style>
+</head>
+<body>
+
+	<form action="#" method="post" onsubmit="return validateForm()">
+
+		<label for="name">Name:</label>
+		<input type="text" id="name" name="name" required>
+
+		<label for="email">Email:</label>
+		<input type="email" id="email" name="email" required>
+
+        <label for="phonenumber">Phone Number:</label>
+		<input type="phonenumber" id="phonenumber" name="phonenumber" required>
+
+        <label for="password">Password:</label>
+		<input type="password" id="password" name="password" required>
+
+        <label for="gender">Gender:</label>
+		<input type="gender" id="gender" name="gender" required>
+
+
+		<div class="error" id="emailError">Please enter a valid email address.</div>
+		<input type="submit" value="Submit">
+		<div class="success" id="successMsg">Your form has been submitted successfully.</div>
+
+	</form>
+
+	<script>
+
+		function validateForm() {
+			var name = document.getElementById("name").value;
+            var name = document.getElementById("phonenumber").value;
+            var name = document.getElementById("password").value;
+            var name = document.getElementById("gender").value;
+			var email = document.getElementById("email").value;
+			var emailError = document.getElementById("emailError");
+			var successMsg = document.getElementById("successMsg");
+			var isValid = true;
+
+
+
+			if (name === "") {
+
+				document.getElementById("name").classList.add("highlight");
+				isValid = false;
+
+			} else {
+				document.getElementById("name").classList.remove("highlight");
+			}
+
+
+
+            if (phonenumber === "") {
+
+               document.getElementById("phonenumber").classList.add("highlight");
+               isValid = false;
+
+            } else {
+                document.getElementById("phonenumber").classList.remove("highlight");
+            }
+
+
+
+
+            if (password === "") {
+
+                document.getElementById("password").classList.add("highlight");
+                isValid = false;
+          
+            } else {
+                document.getElementById("password").classList.remove("highlight");
+            }
+            
+            
+
+            if (gender === "") {
+
+                document.getElementById("gender").classList.add("highlight");
+                isValid = false;
+
+            } else {
+                document.getElementById("gender").classList.remove("highlight");
+            }
+
+
+
+			if (email === "") {
+
+				document.getElementById("email").classList.add("highlight");
+				emailError.style.display = "none";
+				isValid = false;
+
+			} else if (!isValidEmail(email)) {
+				document.getElementById("email").classList.add("highlight");
+				emailError.style.display = "block";
+				isValid = false;
+
+			} else {
+				document.getElementById("email").classList.remove("highlight");
+				emailError.style.display = "none";
+			}
+
+			if (isValid) {
+				successMsg.style.display = "block";
+
+			} else {
+				successMsg.style.display = "none";
+			}
+
+			return isValid;
+		}
+
+		function isValidEmail(email) {
+
+			var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+			return emailPattern.test(email);
+		}
+	</script>
+</body>
+</html>
