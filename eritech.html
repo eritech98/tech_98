@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html>
+ <head>
+    <title>This is my first Html class</title>
+
+    <style>
+        /* Style the container element */
+        .container {
+          width: 90%; /* Set a fixed width */
+          margin-left: auto; /* Center horizontally */
+          margin-right: auto;
+        }
+    </style>
+    <div class="container">
+        <!-- Your content goes here -->
+      
+
+
+
+ </head>
+<body>
+    <h1>1.Html tags Heading and paragraph</h1>
+    <h2>Header tags are only six.i.e h1 to h6,h1 is the largest size as shown with the title above and h6 is the smallest size.Below are example of h3,h4,h5 and h6 respectively(all in bold).It is important to note paragraphs are not in bold</h2>
+
+    <h3>My short life story </h3>
+    <h4>I love coding</h4>
+    <h5>It was the best year of my life</h5>
+    <h6>I love you</h6>
+
+    <p>After class I went for a walk in the graduation square</p>
+
+    <h1>2.Html tags,links ,images</h1>
+    
+    <h2>How to insert image,how to use Lorem and break 'br',how to use uncle tags that is 'a href'to insert hyperlinks also learnt about link tags,helps us to link our files with other files like 'css' and is found in header.The tag used is 'link rel="stylesheet" href="styles.css"' </h2>
+    <img src="ert.jpg" alt="This is the image looks"
+     
+    <br><h2>It was really amazing!</h2>
+    <a href="https://www.pexels.com/photo/person-sitting-on-mountain-cliff-1659438/">"Please click here"</a>
+    
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed unde, est, nesciunt accusamus quisquam voluptas libero iure suscipit soluta aliquam molestias <br>reiciendis saepe adipisci fugiat id cupiditate beatae ipsa? Ab!</p>
+    
+    <h1>3.How to list</h1>
+    <ul>
+        <li>Campus is beautiful</li>
+        <li>Made awesome friends</li>
+        <li>Was the best evening in my life</li>
+    
+    </ul>
+
+    <h1>4.How to create tables,th is for columns while tr is for rows;</h1>
+    <div>
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Residence</th>
+            </tr>
+            <tr>
+                <th>Erick</th>
+                <th>24yrs</th>
+                <th>Nairobi</th>
+            </tr>
+            <tr>
+                <th>Trevor</th>
+                <th>25yrs</th>
+                <th>Usa</th>
+            </tr>
+            <tr>
+                <th>Mercy</th>
+                <th>26yrs</th>
+                <th>England</th>
+            
+        </table>
+    </div>
+
+    <h1>5.Creating Forms for user input</h1>
+    <h2>This can easily be done as shown in the screeshot below.Just copy and paste.Remember the L shape <br>small letter,small letter,small letter.Some points to note:label is followe by for.Also if you use input type<br>and the type is radio,,make sure to add value equals to male.Remember the shape L.We also <br>have the input type which equals to submit as shown in the screenshot.We have also learnt about the input type button and the select id.The select id allows the user to select choices from the dropdown menu</h2>
+    
+    
+    <form>
+        <fieldset>
+            <legend>Bio data</legend>
+            <label for="jina">Jina</label>
+            <input type="text" name="jina" id="jina"
+
+            label for="email1">Email1</label>
+            <input type="email1" name="email1" id="email1"
+
+            label for="dob">Date of birth</label>
+            <input type="date" name="dob" id="dob"
+
+            label for="male">Male</label>
+            <input type="radio" name="male" id="sex" value="male"
+
+            label for="female">Female</label>
+            <input type="radio" name="female" id="sex" value="female">
+
+            <input type= "button" value="submit">
+            
+             <select id="state" >
+                <Option value="Erick">Erick</Option>
+                <Option value="Erick">Opiyo</Option>
+                <Option value="Erick">Olando</Option>
+              
+             </select>
+
+        <br>
+        <br>
+    <h3>Example of the above class is shown below:</h3>
+    <img src="forms.png" alt="Example of how to create forms for user input " width=850 height=600>
+                      
+    
+            
+        </fieldset>
+
+    </form>
+
+   
+
+    <br>
+    <br>
+    <h1>Section b;Html 5 semantics.How a website should look like</h1>
+    <body>
+        <header>
+            <h1>This is our header;not same as head</h1>
+            <nav>
+                <ul>
+                    <li><a href="about.html">About us</a></li>
+                    <li><a href="contact.html">Contact us</a></li>
+
+                </ul>
+            </nav>
+            
+        </header>
+        <h2>This is the main section.Its the first section<br><br>I put '/main' after the first section to avoid spill over of blue in the entire page.Removing it or returning it after the section part results to spill over.It can also be used as a design technique.I discovered this.I love it was so easy.This should not be icluded.Its for clarification purposes </h2>
+        <main>
+            <section id="introduction" style="background-color:darkblue;padding: 16px;color:white;">
+                <h2>This is our introduction</h2>
+                <p>We can only have one 'main' in a html file.To avoid repeating writing tags you can copy and paste</p>
+        </main>
+            <section id="Post" style="background-color:black;padding: 16px;color: white;height:330vh;">
+                <article>
+                    <h2>This is my first article post</h2>
+                    <p>Its my first class and am really enjoying it.I love learning new things  a lot</p>
+                   
+            
+                    <aside style="float: right;Width:40%;">
+                    <p>I have just started designing my website using html and its really interesting.This is so much fun and I can't help it.I have decided to write all this while am learning for practise and know how things work.Today,I have not slept.I have been seating on my chair coding the whole night.Mhhh...Its really exciting!.</p>
+
+                    </aside>
+
+                </article>
+
+            <section id="media">
+
+                <img src="plane.jpg" alt= "this is a small plane" width="600" height="400">
+                <figure style="color: white;">&copy;1920 Berlin</figure>
+                
+
+                <h4>This is a sample of how to add video using video src equals file.mp4.<br>In short, how to use video control to add sound in my webpage.I have learnt something <br>new about resizing videos using 'video width equals to 640 height equals to 360 controls' </h4>
+                <video width="600" height="400" controls>
+                    <source src="ty.mp4">
+                    
+                   
+                </video>
+
+                <br>
+                <h4>This is a sample of adding audio in html.Same as for video.Always remember<br> to copy and pate to avoid repeating codes with sames format </h4>
+                <audio controls>
+                        <source src="sound.mp3">
+                       
+                </audio>
+
+
+               <br>
+            <section id="Making my website functional"
+
+                <aside style="float:left;Width:56%;">
+                  <h1>This is an example of a functional form in my website.I used the code which was used in our example in section d of this exercise.This was so easy and I loved it so much</h1>
+
+                <style>
+        
+                    form {
+                        max-width: 400px;
+                        margin: auto;
+                    }
+                    input[type=text], input[type=email] {
+                        padding: 10px;
+                        margin: 5px 0;
+                        width: 50%;
+                        border-radius: 5px;
+                        border: 1px solid #ccc;
+                    }
+            
+                    input[type=text], input[type=phonenumber] {
+                        padding: 10px;
+                        margin: 5px 0;
+                        width: 50%;
+                        border-radius: 5px;
+                        border: 1px solid #ccc;
+                    }
+            
+                    input[type=text], input[type=password] {
+                        padding: 10px;
+                        margin: 5px 0;
+                        width: 50%;
+                        border-radius: 5px;
+                        border: 1px solid #ccc;
+                    }     
+            
+                    input[type=text], input[type=gender] {
+                        padding: 10px;
+                        margin: 5px 0;
+                        width: 50%;
+                        border-radius: 5px;
+                        border: 1px solid #ccc;
+                    }
+                    
+            
+                    input[type=submit] {
+                        background-color: #4CAF50;
+                        color: white;
+                        padding: 10px 20px;
+                        border: none;
+                        border-radius: 5px;
+                        cursor: pointer;
+                    }
+                    .error {
+                        color: red;
+                        font-weight: bold;
+                        margin-top: 5px;
+                        display: none;
+                    }
+                    .success {
+                        color: green;
+                        font-weight: bold;
+                        margin-top: 5px;
+                        display: none;
+                    }
+                    .highlight {
+                        border: 1px solid red;
+                    }
+                </style>
+            
+            
+            
+                <form action="form2" method="post" onsubmit="return validateForm()">
+            
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+            
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+            
+                    <label for="phonenumber">Phone Number:</label>
+                    <input type="phonenumber" id="phonenumber" name="phonenumber" required>
+            
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required>
+            
+                    <label for="gender">Gender:</label>
+                    <input type="gender" id="gender" name="gender" required>
+            
+            
+                    <div class="error" id="emailError">Please enter a valid email address.</div>
+                    <input type="submit" value="Submit">
+                    <div class="success" id="successMsg">Your form has been submitted successfully.</div>
+            
+                </form>
+            
+                <script>
+            
+                    function validateForm() {
+                        var name = document.getElementById("name").value;
+                        var name = document.getElementById("phonenumber").value;
+                        var name = document.getElementById("password").value;
+                        var name = document.getElementById("gender").value;
+                        var email = document.getElementById("email").value;
+                        var emailError = document.getElementById("emailError");
+                        var successMsg = document.getElementById("successMsg");
+                        var isValid = true;
+            
+            
+            
+                        if (name === "") {
+            
+                            document.getElementById("name").classList.add("highlight");
+                            isValid = false;
+            
+                        } else {
+                            document.getElementById("name").classList.remove("highlight");
+                        }
+            
+            
+            
+                        if (phonenumber === "") {
+            
+                           document.getElementById("phonenumber").classList.add("highlight");
+                           isValid = false;
+            
+                        } else {
+                            document.getElementById("phonenumber").classList.remove("highlight");
+                        }
+            
+            
+            
+            
+                        if (password === "") {
+            
+                            document.getElementById("password").classList.add("highlight");
+                            isValid = false;
+                      
+                        } else {
+                            document.getElementById("password").classList.remove("highlight");
+                        }
+                        
+                        
+            
+                        if (gender === "") {
+            
+                            document.getElementById("gender").classList.add("highlight");
+                            isValid = false;
+            
+                        } else {
+                            document.getElementById("gender").classList.remove("highlight");
+                        }
+            
+            
+            
+                        if (email === "") {
+            
+                            document.getElementById("email").classList.add("highlight");
+                            emailError.style.display = "none";
+                            isValid = false;
+            
+                        } else if (!isValidEmail(email)) {
+                            document.getElementById("email").classList.add("highlight");
+                            emailError.style.display = "block";
+                            isValid = false;
+            
+                        } else {
+                            document.getElementById("email").classList.remove("highlight");
+                            emailError.style.display = "none";
+                        }
+            
+                        if (isValid) {
+                            successMsg.style.display = "block";
+            
+                        } else {
+                            successMsg.style.display = "none";
+                        }
+            
+                        return isValid;
+                    }
+            
+                    function isValidEmail(email) {
+            
+                        var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            
+                        return emailPattern.test(email);
+                    }
+                </script>
+
+                    </aside>
+
+
+
+            </section>         
+        
+            </section>
+             
+            </section>
+            <h2>This is basically our footer.Its the last section</h2>
+
+            <p>This statement should not be included,its for clarification purposes </p>
+            <footer>Copyright &copy;</footer>
+
+            
+    </body>
+
+    </div>
+
+
+        <style>
+            /* Style the container element */
+            .container {
+              width: 80%; /* Set a fixed width */
+              margin-left: auto; /* Center horizontally */
+              margin-right: auto;
+            }
+        </style>
+        <div class="container">
+            <!-- Your content goes here -->
+              
+
+    <br>
+    <br>
+    <br>
+    <h1>Section c,Html semantics 2(more semantics)</h1>
+    <h2>More semantics to make a website more appealing.The screenshot below shows samples of more semantics here are example,we added video using 'video controls src equals to the linl of video.We also copied this and used 'audio controls src equals .mp3' to add sound in our page.I found about how to adjust video sizes using 'video width equals to 640 height equals to 360 control'</h2>   
+    <br>
+    <img src="tech.png" alt="screenshot" width="850" height="600"> 
+
+    
+    
+    <br>
+    <h1>Section d;HTML,CSS and Java script.<h1></h1>
+    <h2>This was my first assignment to learn more about creating an interactive website by adding functionalities using java script.The example below shows a form that allows input of a user and gives an error message if the user gives a false email or leave ones of the spaces blank.It also shows the user,that he/she successfully submitted the data.I learnt how to put the h2 heading at the center and also change its color.Doing this is simple as you can copy and paste without repeating.These was an interesting class.I will add this to the website we were creating above and a screenshort in this chapter </h2>        
+    <br>
+    
+    
+        <h1>This is an example of a functional form in my website</h1>
+
+        <style>
+
+            form {
+                max-width: 1000px;
+                margin: auto;
+            }
+            input[type=text], input[type=email] {
+                padding: 10px;
+                margin: 5px 0;
+                width: 100%;
+                border-radius: 5px;
+                border: 1px solid #ccc;
+            }
+    
+            input[type=text], input[type=phonenumber] {
+                padding: 10px;
+                margin: 5px 0;
+                width: 100%;
+                border-radius: 5px;
+                border: 1px solid #ccc;
+            }
+    
+            input[type=text], input[type=password] {
+                padding: 10px;
+                margin: 5px 0;
+                width: 100%;
+                border-radius: 5px;
+                border: 1px solid #ccc;
+            }     
+    
+            input[type=text], input[type=gender] {
+                padding: 10px;
+                margin: 5px 0;
+                width: 100%;
+                border-radius: 5px;
+                border: 1px solid #ccc;
+            }
+            
+    
+            input[type=submit] {
+                background-color: #4CAF50;
+                color: white;
+                padding: 10px 20px;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+            }
+            .error {
+                color: red;
+                font-weight: bold;
+                margin-top: 5px;
+                display: none;
+            }
+            .success {
+                color: green;
+                font-weight: bold;
+                margin-top: 5px;
+                display: none;
+            }
+            .highlight {
+                border: 1px solid red;
+            }
+        </style>
+    
+    
+    
+        <form action="form2" method="post" onsubmit="return validateForm()">
+    
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+    
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+    
+            <label for="phonenumber">Phone Number:</label>
+            <input type="phonenumber" id="phonenumber" name="phonenumber" required>
+    
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+    
+            <label for="gender">Gender:</label>
+            <input type="gender" id="gender" name="gender" required>
+    
+    
+            <div class="error" id="emailError">Please enter a valid email address.</div>
+            <input type="submit" value="Submit">
+            <div class="success" id="successMsg">Your form has been submitted successfully.</div>
+    
+        </form>
+    
+        <script>
+    
+            function validateForm() {
+                var name = document.getElementById("name").value;
+                var name = document.getElementById("phonenumber").value;
+                var name = document.getElementById("password").value;
+                var name = document.getElementById("gender").value;
+                var email = document.getElementById("email").value;
+                var emailError = document.getElementById("emailError");
+                var successMsg = document.getElementById("successMsg");
+                var isValid = true;
+    
+    
+    
+                if (name === "") {
+    
+                    document.getElementById("name").classList.add("highlight");
+                    isValid = false;
+    
+                } else {
+                    document.getElementById("name").classList.remove("highlight");
+                }
+    
+    
+    
+                if (phonenumber === "") {
+    
+                   document.getElementById("phonenumber").classList.add("highlight");
+                   isValid = false;
+    
+                } else {
+                    document.getElementById("phonenumber").classList.remove("highlight");
+                }
+    
+    
+    
+    
+                if (password === "") {
+    
+                    document.getElementById("password").classList.add("highlight");
+                    isValid = false;
+              
+                } else {
+                    document.getElementById("password").classList.remove("highlight");
+                }
+                
+                
+    
+                if (gender === "") {
+    
+                    document.getElementById("gender").classList.add("highlight");
+                    isValid = false;
+    
+                } else {
+                    document.getElementById("gender").classList.remove("highlight");
+                }
+    
+    
+    
+                if (email === "") {
+    
+                    document.getElementById("email").classList.add("highlight");
+                    emailError.style.display = "none";
+                    isValid = false;
+    
+                } else if (!isValidEmail(email)) {
+                    document.getElementById("email").classList.add("highlight");
+                    emailError.style.display = "block";
+                    isValid = false;
+    
+                } else {
+                    document.getElementById("email").classList.remove("highlight");
+                    emailError.style.display = "none";
+                }
+    
+                if (isValid) {
+                    successMsg.style.display = "block";
+    
+                } else {
+                    successMsg.style.display = "none";
+                }
+    
+                return isValid;
+            }
+    
+            function isValidEmail(email) {
+    
+                var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    
+                return emailPattern.test(email);
+            }
+        </script>
+         
+    
+
+    <h2>The above example is very crucial.We managed to include this in this file by only copying the whole body of the above code.We tried this in our website that we are tring to create above.I copied the whole body to add the functionality in section b;html how a website should look like.However,I adjusted the style of the boxes spaces to make it fit.</h2>
+
+
+    
+    </div>  
+    </body>
+    </html>
+    
+
+</body>
+ 
+
+</html>
