@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bio-data form</title>
+   <style>
+    form {
+    max-width: 600px;
+    margin: auto;
+}
+input[type=text], input[type=email] {
+    padding: 10px;
+    margin: 5px 0;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+input[type=text], input[type=phonenumber] {
+    padding: 10px;
+    margin: 5px 0;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+input[type=text], input[type=password] {
+    padding: 10px;
+    margin: 5px 0;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}     
+
+input[type=text], input[type=gender] {
+    padding: 10px;
+    margin: 5px 0;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+
+input[type=submit] {
+    background-color: #4CAF50;
+    color:white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.error {
+    color:whitesmoke;
+    font-weight: bold;
+    margin-top: 7px;
+    display: none;
+}
+.success {
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    margin-top: 5px;
+    display: none;
+}
+.highlight {
+    border: 1px solid red;
+}
+
+.alex{
+    background-color:#151515;
+    padding-top:1%;
+    padding-bottom: 16%;
+    height:80vh;
+    color: #e2e2e2; ;
+    padding-right:10px ;
+}
+
+#box2{padding-left: 3%;
+    padding-top: 1%;
+    font-size: 35px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 600;
+    color: #808080;
+    
+}
+
+#formx{
+ 
+    padding-top: 40px;
+    padding-bottom: 30px;
+    color:#808080;
+    font-size: 20px;
+    
+}
+
+#about{
+    
+    padding-right:40%;
+    padding-left:0px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    font-weight: bold;
+    font-size: 20px;
+    
+}
+
+a{
+   color: #808080; 
+}
+
+   </style>
+
+</head>
+    
+    <body> 
+
+   
+    <div class="alex">
+
+    <h2  style="text-align: center;font-size:40px;color: #808080;font-family: Georgia, 'Times New Roman', Times, serif;">Week Two Assignment-Erick Olando</h2>
+
+    
+     <div id="Box1">
+    <aside style="float: right;Width:60%;">
+        
+    <div id="formx">
+	<form action="#" method="post" onsubmit="return validateForm()">
+
+		<label for="name">Name:</label>
+		<input type="text" id="name" name="name" required>
+
+		<label for="email">Email:</label>
+		<input type="email" id="email" name="email" required>
+
+        <label for="phonenumber">Phone Number:</label>
+		<input type="phonenumber" id="phonenumber" name="phonenumber" required>
+
+        <label for="password">Password:</label>
+		<input type="password" id="password" name="password" required>
+
+        <label for="gender">Gender:</label>
+		<input type="gender" id="gender" name="gender" required>
+
+
+		<div class="error" id="emailError">Please enter a valid email address.</div>
+		<input type="submit" value="Submit">
+		<div class="success" id="successMsg">Your form has been submitted successfully.</div>
+
+
+	</form>
+
+   
+
+    <aside style="float: right;Width:37%;">
+
+    <div id="about">
+    <ul>
+    <ul style><a href="https://lms.terrahq.co/"</ul>About</a></ul>
+    <ul><a href="https://lms.terrahq.co/"</ul>Contact us</a></ul>
+    <ul><a href="https://lms.terrahq.co/"</ul>FAQs</a></ul>
+    <ul><a href="https://lms.terrahq.co/"</ul>Learn about</a></ul>      
+
+    </ul>
+
+    </div>
+   </aside>
+
+
+    </div>
+
+     </aside>
+
+
+	<script>
+
+		function validateForm() {
+			var name = document.getElementById("name").value;
+            var name = document.getElementById("phonenumber").value;
+            var name = document.getElementById("password").value;
+            var name = document.getElementById("gender").value;
+			var email = document.getElementById("email").value;
+			var emailError = document.getElementById("emailError");
+			var successMsg = document.getElementById("successMsg");
+			var isValid = true;
+
+
+
+			if (name === "") {
+
+				document.getElementById("name").classList.add("highlight");
+				isValid = false;
+
+			} else {
+				document.getElementById("name").classList.remove("highlight");
+			}
+
+
+
+            if (phonenumber === "") {
+
+               document.getElementById("phonenumber").classList.add("highlight");
+               isValid = false;
+
+            } else {
+                document.getElementById("phonenumber").classList.remove("highlight");
+            }
+
+
+
+
+            if (password === "") {
+
+                document.getElementById("password").classList.add("highlight");
+                isValid = false;
+          
+            } else {
+                document.getElementById("password").classList.remove("highlight");
+            }
+            
+            
+
+            if (gender === "") {
+
+                document.getElementById("gender").classList.add("highlight");
+                isValid = false;
+
+            } else {
+                document.getElementById("gender").classList.remove("highlight");
+            }
+
+
+
+			if (email === "") {
+
+				document.getElementById("email").classList.add("highlight");
+				emailError.style.display = "none";
+				isValid = false;
+
+			} else if (!isValidEmail(email)) {
+				document.getElementById("email").classList.add("highlight");
+				emailError.style.display = "block";
+				isValid = false;
+
+			} else {
+				document.getElementById("email").classList.remove("highlight");
+				emailError.style.display = "none";
+			}
+
+			if (isValid) {
+				successMsg.style.display = "block";
+
+			} else {
+				successMsg.style.display = "none";
+			}
+
+			return isValid;
+		}
+
+		function isValidEmail(email) {
+
+			var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+			return emailPattern.test(email);
+		}
+	</script>
+    </div>
+
+
+<div id="box2">
+    <h1 style=>Side Hustle</h1>
+    <h1>Internship</h1>
+    <h1>2023</h1>
+    </div>   
+
+
+
+    </div>
+
+</body>
+<br>
+<footer style="font-size: 25px;font-weight: bold;" >Copyright &copy;</footer>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
