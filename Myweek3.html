@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>erickolando98</title>
+    <style>
+     *{
+        margin: 0;
+        border: 0;
+     }
+      body {
+        font-family: sans-serif;
+      }
+      .intro {
+        position: relative;
+        height: 100vh;
+      }
+      .video-container {
+        position: relative;
+        height: 100%;
+        width: 100%;
+        overflow: hidden;
+        position: relative;
+        width: 100%;
+        height: 100vh;
+
+
+
+      }
+      .video-container video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        position: relative;
+
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover
+        
+
+
+      }
+      .overlay {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        z-index: 1;
+        color: #fff;
+      }
+      .overlay h1 {
+        font-size: 5em;
+        margin: 0;
+        padding: 0;
+        text-shadow: 0 0 10px rgba(0,0,0,0.5);
+        top: 10%;
+        color:#f1ffcf;
+        
+      }
+      .overlay p {
+        font-size: 2em;
+        margin: 0;
+        padding: 0;
+        text-shadow: 0 0 10px rgba(0,0,0,0.5);
+      }
+
+      form {
+    max-width: 600px;
+    margin: auto;
+}
+
+input[type=text], input[type=email] {
+    padding: 10px;
+    margin: 5px 0;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    border: none;
+    border-radius: 20px;
+    box-sizing: border-box;
+    z-index: 1999;
+    opacity: 0.7;
+    font-size: 17px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 900;
+    text-align: center;
+   
+
+}
+
+input[type=text], input[type=phonenumber] {
+    padding: 10px;
+    margin: 5px 0;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    border: none; /* remove default border */
+    border-radius: 20px; /* set the border radius to 20 pixels */
+    box-sizing: border-box; /* include padding in element's total width and height */
+    opacity: 0.7;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 900;
+    text-align: center;
+    font-size:18px;
+   
+}
+
+
+
+input[type=text], input[type=password] {
+    padding: 10px;
+    margin: 5px 0;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    border: none; /* remove default border */
+    border-radius: 20px; /* set the border radius to 20 pixels */
+    box-sizing: border-box; /* include padding in element's total width and height */
+    opacity: 0.7;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 900;
+    text-align: center;
+    font-size:17px;
+    
+}     
+
+input[type=submit] {
+    background-color: blueviolet;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto; 
+    margin-top: 10px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: bold
+}
+.error {
+    color: red;
+    font-weight: bold;
+    margin-top: 5px;
+    display:none ;
+}
+.success {
+    color: green;
+    font-weight: bold;
+    margin-top: 5px;
+    display:none;
+}
+.highlight {
+    border: 1px solid red;
+}
+
+#my-form{
+  position: absolute;
+  top:40%;
+  left: 0;
+  background-color: transparent;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 400px;
+  text-align: center;
+  z-index: 999;
+  color:whitesmoke;
+  font-size: 22px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: 500;
+}
+
+#para{
+    transform: translateY(-90%);
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: medium;
+    
+   
+}
+
+.heading, .subheading {
+  display: inline-block;
+  margin: 0 auto;
+}
+
+.overlay2{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 7vh;
+  background-color: #b8da60 ; /* replace with your desired color */
+  opacity: 1.0;
+}
+
+.overlay3{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 6vh;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 6vh;
+  background-color: #455224  ; /* replace with your desired color */
+  opacity:0.8 ; /* replace with your desired color */
+ 
+
+}
+
+
+
+.leftcontent{
+  padding:4px;
+  padding: 4px;
+  position: relative; /* make the box position relative */
+  top: 8px; /* move the box up by 20 pixels */
+  width: 200px;
+  height: 30px;
+  padding-left: 50px;
+  bottom: 30px;
+  font-size:20px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color:black;
+  font-weight: bold;
+}
+
+
+.rightcontent{
+  padding:4px;
+  position: relative; /* make the box position relative */
+  top: -30px; /* move the box up by 20 pixels */
+  width: 200px;
+  height: 30px;
+  padding-left: 1px;
+  bottom: -30px;
+  padding-right: 90px;
+  text-align:end;
+  font-size: 22px;
+  white-space: nowrap;
+
+}
+
+.top1{
+  padding:5px;
+  position: relative; /* make the box position relative */
+  top: 3px; /* move the box up by 20 pixels */
+  width: 130px;
+  height: 30px;
+  padding-left: 30px;
+  bottom: -30px;
+  padding-right: 200px;
+  text-align:end;
+  font-size: 22px;
+  white-space: nowrap;
+}
+  
+ .top2{
+  background-color:#455224;
+  width: 300px;
+  height: 40px;
+  padding:6px;
+  position: relative; /* make the box position relative */
+  top: -0px; /* move the box up by 20 pixels */
+  width: 150px;
+  height: 35px;
+  padding-left: 0px;
+  bottom: -30px;
+  padding-right: 10px;
+  text-align:left;
+  font-size: 21px;
+  white-space: nowrap;
+  font-family: 'Times New Roman', Times, serif;
+  border-radius: 25px;
+  font-weight: bold;
+  opacity: 30 ;
+  color:white;
+  display:hidden;
+  
+  
+}
+
+
+    </style>
+  </head>
+  <body>
+    <div class="intro">
+      <div class="video-container">
+        <video src="erickjava2.mp4" autoplay loop muted></video>
+        <div class="overlay3">
+          <div class="top1"> 
+            
+               <select class="top2">
+              <option value="Option1">Company</option>
+              <option value="option2">About us</option>
+              <option value="option3">Our Offerings</option>
+              <option value="option4">Blog</option>
+              <option value="option5">Careers</option>
+              <option value="option6">Newsroom</option>
+              <option value="option7">How eritech works</option>
+            </select>
+            
+          </div>
+        
+        </div>
+        <div class="overlay2">
+
+          <aside>
+        <div class="leftcontent"><p>&copy;eritech 2023</p></div>
+          </aside>
+
+          <aside style="float:right;">
+        <div class="rightcontent"><img src="https://img.icons8.com/ios-glyphs/24/null/linkedin.png"/> <img src="https://img.icons8.com/fluency-systems-regular/24/null/facebook-new--v1.png"/> <img src="https://img.icons8.com/fluency-systems-filled/24/null/instagram-new.png"/> <img src="https://img.icons8.com/ios-filled/24/null/twitter-circled--v1.png"/></div>
+
+      </div> 
+      <div class="overlay">
+        <div id="para">
+            <h1>Welcome to eritech</h1>
+            <p>Get ready to be inspired.</p>
+            </div>    
+   
+    </div>
+
+    <div id="my-form">
+        <form action="#" method="post" onsubmit="return validateForm()">
+
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+    
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+    
+            <label for="phonenumber">Phone Number:</label>
+            <input type="phonenumber" id="phonenumber" name="phonenumber" required>
+    
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+    
+            
+            <div class="error" id="emailError">Please enter a valid email address.</div>
+            <input type="submit" value="Login">
+            <div class="success" id="successMsg">Your form has been submitted successfully.</div>
+    
+        </form> 
+
+        <script>
+
+    function validateForm() {
+     var name = document.getElementById("name").value;
+    var phoneNumber = document.getElementById("phonenumber").value;
+    var password = document.getElementById("password").value;
+    var email = document.getElementById("email").value;
+    var emailError = document.getElementById("emailError");
+    var isValid = true;
+
+    if (name === "") {
+        document.getElementById("name").classList.add("highlight");
+        isValid = false;
+    } else {
+        document.getElementById("name").classList.remove("highlight");
+    }
+
+    if (phoneNumber === "") {
+        document.getElementById("phonenumber").classList.add("highlight");
+        isValid = false;
+    } else {
+        document.getElementById("phonenumber").classList.remove("highlight");
+    }
+
+    if (password === "") {
+        document.getElementById("password").classList.add("highlight");
+        isValid = false;
+    } else {
+        document.getElementById("password").classList.remove("highlight");
+    }
+
+    if (email === "") {
+        document.getElementById("email").classList.add("highlight");
+        emailError.style.display = "none";
+        isValid = false;
+    } else if (!isValidEmail(email)) {
+        document.getElementById("email").classList.add("highlight");
+        emailError.style.display = "block";
+        isValid = false;
+    } else {
+        document.getElementById("email").classList.remove("highlight");
+        emailError.style.display = "none";
+    }
+
+    if (isValid) {
+        alert("Message has been submitted successfully!");
+        return true;
+    } else {
+        return false;
+    }
+}
+
+function isValidEmail(email) {
+    var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return emailPattern.test(email);
+}
+
+        </script>
+
+
+
+   
+
+  </div>
+    
+
+    </div>
+
+    
+
+
+
+  </body>
+</html>
+
+
+
+
+
