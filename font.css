@@ -1,0 +1,69 @@
+@font-face {
+    font-family: 'Avenir';
+    src: url('Avenir-Black.eot');
+    src: local('Avenir Black'), local('Avenir-Black'),
+        url('Avenir-Black.eot?#iefix') format('embedded-opentype'),
+        url('Avenir-Black.woff2') format('woff2'),
+        url('Avenir-Black.woff') format('woff'),
+        url('Avenir-Black.ttf') format('truetype'),
+        url('Avenir-Black.svg#Avenir-Black') format('svg');
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Avenir';
+    src: url('Avenir-Book.eot');
+    src: local('Avenir Book'), local('Avenir-Book'),
+        url('Avenir-Book.eot?#iefix') format('embedded-opentype'),
+        url('Avenir-Book.woff2') format('woff2'),
+        url('Avenir-Book.woff') format('woff'),
+        url('Avenir-Book.ttf') format('truetype'),
+        url('Avenir-Book.svg#Avenir-Book') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Avenir';
+    src: url('Avenir-Heavy.eot');
+    src: local('Avenir Heavy'), local('Avenir-Heavy'),
+        url('Avenir-Heavy.eot?#iefix') format('embedded-opentype'),
+        url('Avenir-Heavy.woff2') format('woff2'),
+        url('Avenir-Heavy.woff') format('woff'),
+        url('Avenir-Heavy.ttf') format('truetype'),
+        url('Avenir-Heavy.svg#Avenir-Heavy') format('svg');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Avenir';
+    src: url('Avenir-Medium.eot');
+    src: local('Avenir Medium'), local('Avenir-Medium'),
+        url('Avenir-Medium.eot?#iefix') format('embedded-opentype'),
+        url('Avenir-Medium.woff2') format('woff2'),
+        url('Avenir-Medium.woff') format('woff'),
+        url('Avenir-Medium.ttf') format('truetype'),
+        url('Avenir-Medium.svg#Avenir-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Arial';
+    src: url('ArialBold.eot');
+    src: local('Arial  Bold'), local('ArialBold'),
+        url('ArialBold.eot?#iefix') format('embedded-opentype'),
+        url('ArialBold.woff2') format('woff2'),
+        url('ArialBold.woff') format('woff'),
+        url('ArialBold.ttf') format('truetype'),
+        url('ArialBold.svg#ArialBold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
